@@ -59,7 +59,9 @@ decorations.pathreplacing
 \usepackage{fp}
 
 %%% biblatex
-\usepackage[backend=biber,sorting=tyn,maxbibnames=1,style=authoryear]{biblatex}
+ \DeclareSortingScheme{hot}{ \sort{year}
+\sort{name}} 
+\usepackage[backend=biber,sorting=hot,maxbibnames=1,style=authoryear]{biblatex}
 
 \usepackage{csquotes}
 %http://tex.stackexchange.com/questions/39285/whats-the-advantage-of-using-csquotes-over-using-an-editors-auto-replacement-f
