@@ -4,30 +4,29 @@
 
 
 
-\chapter{Diffusione e reazioni nucleari}
-
-\begin{refsection}[KinHydRev.bib]
-
-\nocite{*}
-
-down vote
-I am using biblatex. This solved the problem:
-
-\begingroup
-\let\clearpage\relax
-\printbibliography
-\endgroup
+\chapter{Modello solare}
 
 
-\section{Modifiche composizione chimica}
 
-\subsection{Parametri modello solare}
+\section{Diffusione}
+
 
 \section{Fusione}
 
 \subsection{Fattore astrofisico}
 
 \section{Fenomeni di trasporto}
+
+\begin{refsection}[KinHydRev.bib,solarmodels.bib]
+
+\nocite{*}
+
+\begingroup
+\let\clearpage\relax
+\printbibliography{KinHydRev.bib}
+\printbibliography{solarmodels.bib,keyword={diffusion}}
+\endgroup
+
 
 \subsection{Urti}
 
@@ -52,8 +51,12 @@ I am using biblatex. This solved the problem:
 \begin{refsection}[RotationMagneticS.bib]
 
 \nocite{*}
+\begingroup
+\let\clearpage\relax
 \printbibliography
+\endgroup
 \end{refsection}
+\nocite{*}
 \printbibliography[keyword={rotation}]
 
 \chapter{Eccitazione/Damping dei modi vs instabilit\'a}
