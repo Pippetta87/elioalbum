@@ -61,9 +61,10 @@ decorations.pathreplacing
 
 %%%biblatex
 \usepackage[backend=biber,sorting=hot,maxbibnames=1,style=authoryear]{biblatex}
+
 \DeclareSortingScheme{hot}{
-\sort{year}
-\sort{name}
+\sort{\field{year}}
+\sort{\field{name}}
 }
 
 \usepackage{csquotes}
